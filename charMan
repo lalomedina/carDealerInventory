@@ -1,0 +1,105 @@
+import java.util.*;
+import java.io.*;
+
+public class TestInventoryLoad
+{
+   public static void main (String[] args){
+   loadVehicleInventory();
+   menu();
+     
+      
+   }
+     public static void loadVehicleInventory ( ){
+      String makeModel= "";
+      int year = 0;
+      double price = 0.0;
+      int randomNumber = 0;
+      double   LO = 0.0;
+      double   HI   = 0.0;
+      
+     
+      
+     System.out.println("\t\tWelcome to Foothill Dealership\n\t"+ "Loading vehicles from DB ... Please wait ...\n\n");
+
+
+      try
+      {
+         Thread.sleep(3000); // sleep for 4 seconds
+      } catch (Exception e) {
+      }  
+      }
+     /** Random generator = new Random();
+       
+      // Your code here: use a for loop based on the array's length. The loop's body will be doing the listed items below (0 thru 4)
+        randomNumber = generator.nextInt(4);
+
+      // 1.  Use a switch statement based on randomNumber to determine make-model and LO/HI for each car (or each array element
+             switch( randomNumber){
+             case 0:
+                makeModel = "Ford Taurus";
+                LO = 9000;
+                HI = 27000;
+                year = generator.nextInt(0 - 7)+ 1;
+                year = year + 2010;
+                price = LO + generator.nextDouble() * (HI - LO);
+                
+             case 1:
+                makeModel = "Toyota Camry";
+                LO = 12000;
+                HI = 30000;
+                year = generator.nextInt(0 - 7)+ 1;
+                year = year + 2010;
+                price = LO + generator.nextDouble() * (HI - LO);
+                
+                break;
+             case 2:
+                makeModel = "BMW 335i";
+                LO = 39500;
+                HI = 53500;
+                year = generator.nextInt(0 - 7)+ 1;
+                year = year + 2010;
+                price = LO + generator.nextDouble() * (HI - LO);
+                
+                break;
+             case 3:
+                makeModel = "Rolls-Royce Phantom Coupe";
+                LO = 40000;
+                HI = 99999;
+                year = generator.nextInt(0 - 7)+ 1;
+                year = year + 2010;
+                price = LO + generator.nextDouble() * (HI - LO);
+                break;
+                
+               
+                
+             }
+             
+             System.out.println( displayMenu[i] );
+       }
+       //  0: Ford Taurus   1:  Toyota Camry  2: BMW 335i   3: Rolls-Royce Phantom Coupe
+
+      //   For Ford Taurus: LO $9,000- HI $27000, Toyota Camry: LO $12,000- HI$30,000, BMW 335i: $39,500-$53,500,   Rolls-Royce Phantom Coupe $40,000-$99,999
+
+      // year = generator.nextInt(0 - 7)+ 1;
+      //year = year + 2010;  2. Randomly generate a year between 2010-2017 (TIP: Randomly generate an integer number between 0-7 then add 2010 to it)   
+
+                                             
+      // price = LO + generator.nextDouble() * (HI - LO);  3. Use this code to randomly generate a price between LO and HI  
+
+     // At this point you should have a makeModel String, a year, and a price for the current car. Move on to step 4
+
+      //  4. Assign the randomly generated makeModel, year and price to the current array elements for each array accordingly
+
+      } **/
+      
+      
+      
+      public static void menu(){          //shows menu options
+         System.out.println("\t SMART CAR INQUIRY");
+         System.out.println ("1. View vehicle Inventroy");
+         System.out.println ("2. Search by make or model");
+         System.out.println ("3. Quit");
+         System.out.println("\n \t Enter your choice:");
+      }
+
+}
